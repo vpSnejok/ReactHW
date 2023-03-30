@@ -48,8 +48,8 @@ class App extends Component {
         {this.state.isModalOpenSecond && (
           <Modal
             closeModal={this.handleCloseModal}
-            title="modal2"
-            text="modalText 2"
+            title="Do you want save file"
+            text="Lorem ipsum dolor sit amet."
             closeBtn={false}
           />
         )}
