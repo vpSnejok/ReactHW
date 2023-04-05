@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import Key from "./Key/Key";
-import "./KeysList.scss";
+import "./CardList.scss"
 
-class KeysList extends Component {
+import Card from "./Card/Card";
+
+class CardList extends Component {
   render() {
     const { keys, setFavorites, favorites } = this.props;
     return (
@@ -17,7 +18,7 @@ class KeysList extends Component {
           });
 
           return (
-            <Key
+            <Card
               key={key.id}
               {...key}
               isFavorite={isFavorite}
@@ -30,4 +31,4 @@ class KeysList extends Component {
   }
 }
 
-export default KeysList;
+export default CardList;
