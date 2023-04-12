@@ -39,7 +39,6 @@ class App extends Component {
   }
 
   handleOpenModal = (target) => {
-    // console.log(target);
     this.setState((prev) => (prev[target] = true));
     // this.setState((prev) => ({ ...prev, isModalOpen: !prev.isModalOpen }));
   };
@@ -65,6 +64,7 @@ class App extends Component {
           />
         </Container>
       </>
+
     );
   }
 }
